@@ -114,8 +114,8 @@ Note that all experiment parameters are specified in config files (as opposed to
 This implementation starts from the [main.py](main.py), which parses the experiment config file and runs the pre-training locally on a multi-GPU (or single-GPU) machine. For example, to run I-JEPA pretraining on GPUs "0","1", and "2" on a local machine using the config [configs/in1k_vith14_ep300.yaml](configs/in1k_vith14_ep300.yaml), type the command:
 ```
 python main.py \
-  --fname configs/in1k_vith14_ep300.yaml \
-  --devices cuda:0 cuda:1 cuda:2
+  --fname configs/in1k_vitt14_ep300.yaml \
+  --devices cuda:0 cuda:1
 ```
 *Note: This example is just used for illustrative purposes, as the ViT-H/14 config should be run on 16 A100 80G GPUs for an effective batch-size of 2048, in order to reproduce our results.*
 

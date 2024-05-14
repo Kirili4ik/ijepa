@@ -187,7 +187,7 @@ def main(args, resume_preempt=False):
         horizontal_flip=use_horizontal_flip, # false
         color_distortion=use_color_distortion, # false
         color_jitter=color_jitter) # false
-        # by default normalization is set to imagenet1k
+        # by default normalization is set to imagenet1k !
 
     # -- init data-loaders/samplers
     _, unsupervised_loader, unsupervised_sampler = make_imagenet1k(
